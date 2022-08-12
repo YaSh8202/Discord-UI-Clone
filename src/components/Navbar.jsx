@@ -1,7 +1,9 @@
 import React from "react";
 import discordLogo from "../../assets/discord_main_logo.svg";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <div className=" z-10 relative">
       <nav className="flex  flex-row w-11/12 lg:w-3/4 mx-auto items-center justify-betweeen ">
@@ -30,7 +32,10 @@ const Navbar = () => {
           </a>
         </div>
         <div className="flex-1">
-          <button className=" text-Gray-600 font-medium leading-4 shadow-sm px-4 py-2.5 text-sm rounded-full hover:shadow-xl ease-in-out hover:text-discordBlue-100 bg-white">
+          <button
+            onClick={() => navigate("/login")}
+            className=" text-Gray-600 font-medium leading-4 shadow-sm px-4 py-2.5 text-sm rounded-full hover:shadow-xl ease-in-out hover:text-discordBlue-100 bg-white"
+          >
             Login
           </button>
         </div>

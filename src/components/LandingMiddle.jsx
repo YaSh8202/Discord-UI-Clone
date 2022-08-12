@@ -9,12 +9,15 @@ const LandingMiddle = () => {
   return (
     <div className="flex flex-col font-heading text-Gray-600 ">
       <div className="w-full bg-white">
-        <div className="py-16  flex flex-row items-center w-[70%] justify-around mx-auto ">
+        <div className="lg:py-20 md:py-16 py-12  flex md:flex-row flex-col items-center lg:w-[80%] md:w-[85%] xl:w-[75%] w-[90%] justify-between mx-auto ">
           <div>
-            <img className="w-[36rem] max-w-none" src={invite_only_landing} />
+            <img
+              className="lg:w-[42rem] md:w-[30rem]  w-full  max-w-none"
+              src={invite_only_landing}
+            />
           </div>
-          <div className="flex text-Gray-600 flex-col items-start w-[16rem] lg:w-[20rem] gap-3 ">
-            <h2 className="tetext-3xl lg:text-5xl font-bold ">
+          <div className="flex text-Gray-600 flex-col items-start w-[16rem] lg:w-[23rem] gap-3 ">
+            <h2 className="text-3xl lg:text-5xl lg:leading-[3.5rem] font-bold ">
               Create an invite-only place where you belong
             </h2>
             <p className=" text-lg font-[350] leading-8">

@@ -25,6 +25,9 @@ module.exports = {
       fontFamily: {
         heading: ["Ginto", "Helvetica Neue", "Helvetica", "sans - serif"],
       },
+      backgroundImage: {
+        "login-bg": 'url("./assets/login_bg.svg")',
+      },
     },
   },
   plugins: [
