@@ -4,8 +4,10 @@ import usa_flag from "../../assets/usa_flag.png";
 import { BsTwitter, BsYoutube, BsInstagram } from "react-icons/bs";
 import { AiFillFacebook } from "react-icons/ai";
 import discord from "../../assets/discord_main_logo.svg";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <div className="bg-Gray-600 w-full ">
       <div className="max-w-7xl mx-auto text-white flex pt-20 pb-8 px-6 flex-col   ">
@@ -106,7 +108,10 @@ const Footer = () => {
         </div>
         <div className="flex justify-between py-6 items-center ">
           <img src={discord} />
-          <button className="bg-discordBlue-100 py-2 px-7 rounded-full hover:brightness-[1.2] duration-150 ">
+          <button
+            onClick={() => navigate("./register")}
+            className="bg-discordBlue-100 py-2 px-7 rounded-full hover:brightness-[1.2] duration-150 "
+          >
             Sign up
           </button>
         </div>

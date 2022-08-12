@@ -2,6 +2,7 @@ import React from "react";
 import loginBg from "../../assets/login_bg.svg";
 import discord from "../../assets/discord_main_logo.svg";
 import qrCode from "../../assets/qr_code.png";
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
@@ -9,7 +10,12 @@ function Login() {
       <img className=" w-full h-full -z-10 absolute " src={loginBg}></img>
       <div className="bg-Gray-200 h-full sm:h-[408px] w-full sm:w-[75%] md:w-[47rem] mx-auto flex flex-row   justify-between py-6 px-4 sm:px-6 md:px-8 md:py-10 rounded-md gap-16 ">
         <div className="flex flex-col w-full  justify-start sm:justify-between">
-          <img src={discord} className="w-[8.5rem] mx-auto pb-14 sm:hidden  " />
+          <Link to="/">
+            <img
+              src={discord}
+              className="w-[8.5rem] mx-auto pb-14 sm:absolute sm:left-10 sm:top-10  "
+            />
+          </Link>
           <div className="text-center mb-5 ">
             <h3 className="text-2xl text-white font-bold mb-1">
               Welcome Back!
