@@ -63,7 +63,7 @@ const TabBody = ({ activeTab }) => {
           {TabStatus(activeTab)}
         </div>
       </div>
-      <div className="flex-[2] flex flex-col items-center">
+      <div className="lg:flex hidden  flex-[2]  flex-col items-center">
         <ActiveNow />
       </div>
     </div>
