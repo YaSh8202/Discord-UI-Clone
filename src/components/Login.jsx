@@ -2,9 +2,10 @@ import React from "react";
 import loginBg from "../../assets/login_bg.svg";
 import discord from "../../assets/discord_main_logo.svg";
 import qrCode from "../../assets/qr_code.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Login() {
+  const navigate = useNavigate();
   return (
     <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center ">
       <img className=" w-full h-full -z-10 absolute " src={loginBg}></img>
@@ -24,7 +25,13 @@ function Login() {
               We're so exicted to see you again!
             </p>
           </div>
-          <form className=" ">
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              navigate("/dashboard");
+            }}
+            className=" "
+          >
             <div>
               <label
                 htmlFor="email "
@@ -54,7 +61,10 @@ function Login() {
             <a href="#" className="text-sm text-[#00aff4]">
               Forgot your passowrd?
             </a>
-            <button className="bg-discordBlue-100 mt-4 text-white hover:opacity-80 text-center w-full rounded-sm p-2.5 ">
+            <button
+              type="submit"
+              className="bg-discordBlue-100 mt-4 text-white hover:opacity-80 text-center w-full rounded-sm p-2.5 "
+            >
               Login
             </button>
             <div>

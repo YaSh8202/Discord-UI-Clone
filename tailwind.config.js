@@ -20,6 +20,7 @@ module.exports = {
           600: "#23272a",
         },
         green: "#3ba55d",
+
         orange: "#f26522",
       },
       fontFamily: {
