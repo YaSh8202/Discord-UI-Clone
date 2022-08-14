@@ -1,4 +1,6 @@
 import React from "react";
+import ActiveNow from "./ActiveNow";
+import AddFriendForm from "./AddFriendForm";
 
 import {
   MemoAll_users_icon,
@@ -18,7 +20,8 @@ function TabStatus(activeTab) {
           </p>
         </div>
       );
-    case ("online", "addFriend"):
+    case "online":
+    case "addFriend":
       return (
         <div className="w-full flex flex-col gap-6">
           <MemoNo_online_friends className="fill-Gray-100 w-full  " />
@@ -55,12 +58,14 @@ const TabBody = ({ activeTab }) => {
   return (
     <div className="flex flex-row flex-1 bg-Gray-200 ">
       <div className="flex-[4] flex flex-col items-center border-r border-Gray-100">
-        {activeTab === "addFriend" && <div></div>}
+        {activeTab === "addFriend" && <AddFriendForm />}
         <div className="flex-1 w-[55%] flex items-center justify-center ">
           {TabStatus(activeTab)}
         </div>
       </div>
-      <div className="flex-[2] flex flex-col items-center"></div>
+      <div className="flex-[2] flex flex-col items-center">
+        <ActiveNow />
+      </div>
     </div>
   );
 };
