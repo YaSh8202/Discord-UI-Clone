@@ -53,7 +53,7 @@ function Login() {
                 password
               </label>
               <input
-                type="password"
+                type="text"
                 id="password"
                 className="w-full px-3 py-2 bg-Gray-500 rounded outline-none text-lightGray/80 "
               />
@@ -70,9 +70,9 @@ function Login() {
             <div>
               <p className="text-lightGray/30 text-xs mt-2">
                 Need an accout?{" "}
-                <a href="/register" className="text-[#00aff4] text-sm">
+                <Link to="/register" className="text-[#00aff4] text-sm">
                   Register
-                </a>
+                </Link>
               </p>
             </div>
           </form>

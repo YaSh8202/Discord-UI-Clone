@@ -52,7 +52,7 @@ function Register() {
               password
             </label>
             <input
-              type="password"
+              type="text"
               id="password"
               className="w-full px-3 py-2 bg-Gray-500 rounded outline-none text-lightGray/80 "
             />
@@ -60,9 +60,10 @@ function Register() {
           <button className="mb-1  bg-discordBlue-100 mt-8 text-white hover:opacity-80 text-center w-full rounded-sm p-2.5 ">
             Continue
           </button>
-          <a href="/login" className="text-[#00aff4] text-sm">
+
+          <Link to="/login" className="text-[#00aff4] text-sm">
             Already have an account?
-          </a>
+          </Link>
         </div>
       </div>
     </div>
