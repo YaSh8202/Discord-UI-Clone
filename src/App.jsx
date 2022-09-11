@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Cover from "./components/Cover";
 import LandingMiddle from "./components/LandingMiddle";

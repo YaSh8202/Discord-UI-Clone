@@ -13,7 +13,7 @@ const Navbar = () => {
             className="text-white flex-2 w-24 md:w-32 lg:w-32  "
           />
         </Link>
-        <div className="flex flex-[6] flex-row justify-center gap-2 md:gap-4 lg:gap-6 xl:gap-8 child:font-bold child:text-xs md:child:text-sm child:lg:text-base child-hover:underline  ">
+        <div className="hidden md:flex flex-[6] flex-row justify-center gap-2 md:gap-4 lg:gap-6 xl:gap-8 child:font-bold child:text-xs md:child:text-sm child:lg:text-base child-hover:underline  ">
           <a className="text-white text-sm" href="#">
             Download
           </a>
@@ -33,7 +33,7 @@ const Navbar = () => {
             Careers
           </a>
         </div>
-        <div className="flex-1">
+        <div className="flex-1 text-right md:text-left ">
           <button
             onClick={() => navigate("/login")}
             className=" text-Gray-600 font-medium leading-4 shadow-sm px-4 py-2.5 text-sm rounded-full hover:shadow-xl ease-in-out hover:text-discordBlue-100 bg-white"
